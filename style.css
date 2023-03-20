@@ -27,16 +27,24 @@
   font-weight: bold;
   margin: 5px;
 }
-.message p:nth-of-type(odd) {
+.message p:nth-child(2) {
   border-bottom: 1px solid black;
 }
 .message input {
   width: 90%;
-  padding: 8px 0;
+  padding: 8px 5px;
   border-radius: 5px;
   border: 1px solid lightgray;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+.message-output {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+.message-list {
+  list-style-type: none;
 }
 
 button {
@@ -60,6 +68,7 @@ button[type="submit"]:hover {
   color: #fff;
   transition: all 0.3s ease;
 }
+
 @media screen and (max-width: 480px) {
   .message input {
     width: 82%;
